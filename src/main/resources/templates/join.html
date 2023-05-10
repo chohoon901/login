@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>가입 페이지</title>
+</head>
+<body>
+<form th:object="${account}" action="/join" method="post">
+  <div>
+    <label>이름 </label>
+    <input name="name">
+  </div>
+  <div>
+    <label>ID </label>
+    <input name="loginID">
+  </div>
+  <div>
+    <label>PW</label>
+    <input name="password" type="password">
+  </div>
+  <!-- submit => form을 작동-->
+  <button type="submit">가입</button>
+</form>
+</body>
+</html>
